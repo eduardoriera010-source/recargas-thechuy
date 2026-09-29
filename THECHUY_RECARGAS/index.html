@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="xlXjUuqpLCT8tS9eQ2Gs1yBaaYZ_qwikyxgvTQL8YZU">
+
+    <title>THECHUY Recargas - Diamantes Free Fire Venezuela | Pago Móvil y Binance</title>
+    <meta name="description" content="Centro oficial de recargas de diamantes Free Fire en Venezuela. Precios bajos en tiempo real con Pago Móvil y Binance Pay. Atención rápida de 1:00 PM a 8:00 PM.">
+    <meta name="keywords" content="recargas free fire venezuela, comprar diamantes free fire pago movil, thechuy recargas, diamantes ff venezuela, binance pay free fire">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="THECHUY Recargas - Diamantes Free Fire Venezuela">
+    <meta property="og:description" content="Recarga tus diamantes al mejor precio en Bolívares o USDT. Pago Móvil y Binance Pay con tasa en tiempo real.">
+    <meta property="og:type" content="website">
+
+    <style>
+        :root {
+            --bg-dark: #080511;
+            --card-bg: rgba(21, 16, 36, 0.88);
+            --accent-purple: #8b5cf6;
+            --accent-glow: #a855f7;
+            --ff-orange: #ff6b00;
+            --ff-yellow: #ffb700;
+            --text-main: #ffffff;
+            --text-muted: #a1a1aa;
+            --border-color: rgba(139, 92, 246, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 107, 0, 0.25) 0%, transparent 40%),
+                linear-gradient(180deg, rgba(8, 5, 17, 0.88) 0%, rgba(8, 5, 17, 0.98) 100%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+            overflow-x: hidden;
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 460px;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 24px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 0 35px rgba(139, 92, 246, 0.25), 0 10px 30px rgba(0, 0, 0, 0.9);
+            position: relative;
+            z-index: 2;
+        }
+
+        .app-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--ff-yellow), var(--ff-orange), var(--accent-glow));
+        }
+
+        .character-left {
+            position: absolute;
+            left: -80px;
+            bottom: 20px;
+            width: 150px;
+            z-index: 1;
+            pointer-events: none;
+            animation: floatLeft 4s ease-in-out infinite;
+            filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.5));
+        }
+
+        .character-right {
+            position: absolute;
+            right: -75px;
+            top: 40px;
+            width: 140px;
+            z-index: 1;
+            pointer-events: none;
+            animation: floatRight 4.5s ease-in-out infinite;
+            filter: drop-shadow(0 0 15px rgba(255, 107, 0, 0.5));
+        }
+
+        @keyframes floatLeft {
+            0%, 100% { transform: translateY(0px) rotate(-2deg); }
+            50% { transform: translateY(-12px) rotate(1deg); }
+        }
+
+        @keyframes floatRight {
+            0%, 100% { transform: translateY(0px) rotate(2deg); }
+            50% { transform: translateY(-10px) rotate(-1deg); }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(45deg, #ffffff, var(--ff-yellow), var(--ff-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(255, 183, 0, 0.3);
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 2px;
+        }
+
+        .schedule-bar {
+            background: rgba(13, 10, 25, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .status-open {
+            background-color: #34d399;
+            box-shadow: 0 0 8px #34d399;
+        }
+
+        .status-closed {
+            background-color: #ef4444;
+            box-shadow: 0 0 8px #ef4444;
+        }
+
+        .rate-bar {
+            background: rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 183, 0, 0.3);
+            border-radius: 10px;
+            padding: 8px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--ff-yellow);
+            margin-bottom: 18px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            margin-bottom: 22px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background-color: rgba(10, 7, 20, 0.8);
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--accent-glow);
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .diamonds-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 22px;
+        }
+
+        .diamond-card {
+            background: rgba(10, 7, 20, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .diamond-card:hover {
+            border-color: var(--accent-glow);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        .diamond-card.selected {
+            border-color: var(--ff-yellow);
+            background: rgba(255, 183, 0, 0.15);
+            box-shadow: 0 0 18px rgba(255, 183, 0, 0.4);
+        }
+
+        .diamond-amount {
+            font-size: 16px;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .diamond-bonus {
+            font-size: 10px;
+            color: #34d399;
+            margin-top: 2px;
+            font-weight: 700;
+        }
+
+        .diamond-price-usd {
+            font-size: 13px;
+            color: var(--ff-yellow);
+            font-weight: 800;
+            margin-top: 6px;
+        }
+
+        .diamond-price-bs {
+            font-size: 11px;
+            color: #a1a1aa;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .pay-card {
+            background: rgba(10, 7, 20, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 14px 8px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .pay-card.selected {
+            border-color: var(--accent-glow);
+            background: rgba(139, 92, 246, 0.35);
+            color: #fff;
+            box-shadow: 0 0 12px rgba(139, 92, 246, 0.5);
+        }
+
+        .payment-info-box {
+            background: rgba(15, 10, 30, 0.85);
+            border: 1px solid var(--accent-glow);
+            border-radius: 14px;
+            padding: 14px;
+            margin-bottom: 20px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .payment-info-title {
+            font-size: 12px;
+            font-weight: 800;
+            color: var(--ff-yellow);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .payment-detail {
+            font-size: 13px;
+            color: #e4e4e7;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .payment-detail strong {
+            color: #fff;
+        }
+
+        .total-highlight {
+            border-top: 1px dashed var(--border-color);
+            margin-top: 8px;
+            padding-top: 8px;
+            font-size: 15px;
+            font-weight: 900;
+            color: var(--ff-yellow);
+            text-align: center;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--ff-orange), var(--accent-glow));
+            border: none;
+            border-radius: 14px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(255, 107, 0, 0.4);
+            transition: 0.2s;
+            letter-spacing: 1px;
+        }
+
+        .btn-submit:hover {
+            opacity: 0.95;
+            transform: scale(0.99);
+        }
+
+        @media (max-width: 600px) {
+            .character-left, .character-right {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<img class="character-left" src="https://cdna.artstation.com/p/assets/images/images/031/829/732/large/free-fire-alok-png.png" alt="Free Fire Alok">
+<img class="character-right" src="https://pngous.com/wp-content/uploads/2022/03/Free-fire-png-character.png" alt="Free Fire Kelly">
+
+<div class="app-container">
+    <div class="header">
+        <h1>THECHUY RECARGAS</h1>
+        <p>Centro Oficial de Recargas Free Fire</p>
+    </div>
+
+    <div class="schedule-bar">
+        <div class="status-dot" id="schedule-dot"></div>
+        <span id="schedule-text">Cargando horario...</span>
+    </div>
+
+    <div class="rate-bar">
+        <span>Tasa de Cambio VE: </span>
+        <strong id="live-rate">Cargando...</strong>
+    </div>
+
+    <div class="section-title">1. ID de Jugador</div>
+    <div class="input-group">
+        <input type="number" id="player-id" placeholder="Ingresa tu ID (Ej: 123456789)" required>
+    </div>
+
+    <div class="section-title">2. Selecciona Paquete de Diamantes</div>
+    <div class="diamonds-grid">
+        <div class="diamond-card" data-usd="1.10" onclick="selectPackage(this, '100 Diamantes', 1.10)">
+            <div class="diamond-amount">💎 100</div>
+            <div class="diamond-bonus">+10 Extra</div>
+            <div class="diamond-price-usd">$1.10 USD</div>
+            <div class="diamond-price-bs">Calculando...</div>
+        </div>
+        <div class="diamond-card" data-usd="3.20" onclick="selectPackage(this, '310 Diamantes', 3.20)">
+            <div class="diamond-amount">💎 310</div>
+            <div class="diamond-bonus">+31 Extra</div>
+            <div class="diamond-price-usd">$3.20 USD</div>
+            <div class="diamond-price-bs">Calculando...</div>
+        </div>
+        <div class="diamond-card" data-usd="5.30" onclick="selectPackage(this, '520 Diamantes', 5.30)">
+            <div class="diamond-amount">💎 520</div>
+            <div class="diamond-bonus">+52 Extra</div>
+            <div class="diamond-price-usd">$5.30 USD</div>
+            <div class="diamond-price-bs">Calculando...</div>
+        </div>
+        <div class="diamond-card" data-usd="10.50" onclick="selectPackage(this, '1060 Diamantes', 10.50)">
+            <div class="diamond-amount">💎 1060</div>
+            <div class="diamond-bonus">+106 Extra</div>
+            <div class="diamond-price-usd">$10.50 USD</div>
+            <div class="diamond-price-bs">Calculando...</div>
+        </div>
+    </div>
+
+    <div class="section-title">3. Método de Pago</div>
+    <div class="payment-methods">
+        <div class="pay-card" onclick="selectPayment(this, 'Pago Móvil')">📱 Pago Móvil</div>
+        <div class="pay-card" onclick="selectPayment(this, 'Binance Pay')">🟡 Binance Pay</div>
+    </div>
+
+    <div class="payment-info-box" id="payment-info">
+        <div class="payment-info-title" id="info-title">Datos para transferir</div>
+        <div id="info-details"></div>
+        <div class="total-highlight" id="info-total"></div>
+    </div>
+
+    <button class="btn-submit" onclick="sendOrder()">Solicitar Recarga</button>
+</div>
+
+<script>
+    let currentRateBS = 42.50; 
+    let isStoreOpen = true;
+
+    const myPagoMovil = {
+        banco: "Banco de Venezuela (0102)",
+        telefono: "04122871341",
+        cedula: "29754087"
+    };
+
+    const myBinance = {
+        id: "1132079220"
+    };
+
+    function checkBusinessHours() {
+        const now = new Date();
+        const currentHour = now.getHours();
+
+        const dot = document.getElementById('schedule-dot');
+        const text = document.getElementById('schedule-text');
+
+        if (currentHour >= 13 && currentHour < 20) {
+            isStoreOpen = true;
+            dot.className = "status-dot status-open";
+            text.innerHTML = "<span style='color: #34d399;'>Atendiendo en Vivo</span> (1:00 PM - 8:00 PM)";
+        } else {
+            isStoreOpen = false;
+            dot.className = "status-dot status-closed";
+            text.innerHTML = "<span style='color: #ef4444;'>Fuera de Horario</span> (Atención: 1:00 PM - 8:00 PM)";
+        }
+    }
+
+    async function fetchLiveRate() {
+        const rateElement = document.getElementById('live-rate');
+        let loaded = false;
+
+        try {
+            const res = await fetch('https://ve.dolarapi.com/v1/dolares/paralelo');
+            if (res.ok) {
+                const data = await res.json();
+                if (data && data.promedio && data.promedio > 0) {
+                    currentRateBS = parseFloat(data.promedio);
+                    loaded = true;
+                }
+            }
+        } catch (e) {
+            console.warn("Error en la primera API, intentando servidor de respaldo...");
+        }
+
+        if (!loaded) {
+            try {
+                const res = await fetch('https://pydolarvenezuela-api.vercel.app/api/v1/dollar/unit/binance');
+                if (res.ok) {
+                    const data = await res.json();
+                    if (data && data.price && data.price > 0) {
+                        currentRateBS = parseFloat(data.price);
+                        loaded = true;
+                    }
+                }
+            } catch (e) {
+                console.warn("Usando tasa base de respaldo.");
+            }
+        }
+
+        rateElement.innerText = `${currentRateBS.toFixed(2)} BS/USDT`;
+
+        updateCardPrices();
+        updatePaymentInfo();
+    }
+
+    function updateCardPrices() {
+        const cards = document.querySelectorAll('.diamond-card');
+        cards.forEach(card => {
+            const usd = parseFloat(card.getAttribute('data-usd'));
+            const bs = (usd * currentRateBS).toFixed(2);
+            const bsElement = card.querySelector('.diamond-price-bs');
+            if (bsElement) {
+                bsElement.innerText = `≈ ${bs} BS`;
+            }
+        });
+    }
+
+    checkBusinessHours();
+    fetchLiveRate();
+
+    let selectedPkg = '';
+    let selectedPriceUSD = 0;
+    let selectedPayMethod = '';
+
+    function selectPackage(element, pkg, priceUSD) {
+        document.querySelectorAll('.diamond-card').forEach(card => card.classList.remove('selected'));
+        element.classList.add('selected');
+        selectedPkg = pkg;
+        selectedPriceUSD = priceUSD;
+        updatePaymentInfo();
+    }
+
+    function selectPayment(element, method) {
+        document.querySelectorAll('.pay-card').forEach(card => card.classList.remove('selected'));
+        element.classList.add('selected');
+        selectedPayMethod = method;
+        updatePaymentInfo();
+    }
+
+    function updatePaymentInfo() {
+        const box = document.getElementById('payment-info');
+        const title = document.getElementById('info-title');
+        const details = document.getElementById('info-details');
+        const total = document.getElementById('info-total');
+
+        if (!selectedPayMethod) {
+            box.style.display = 'none';
+            return;
+        }
+
+        box.style.display = 'block';
+
+        if (selectedPayMethod === 'Pago Móvil') {
+            title.innerText = "📌 Datos de Pago Móvil";
+            details.innerHTML = `
+                <div class="payment-detail"><span>Banco:</span> <strong>${myPagoMovil.banco}</strong></div>
+                <div class="payment-detail"><span>Teléfono:</span> <strong>${myPagoMovil.telefono}</strong></div>
+                <div class="payment-detail"><span>Cédula:</span> <strong>${myPagoMovil.cedula}</strong></div>
+            `;
+            if (selectedPriceUSD > 0) {
+                const totalBS = (selectedPriceUSD * currentRateBS).toFixed(2);
+                total.innerText = `Monto a pagar: ${totalBS} BS`;
+            } else {
+                total.innerText = "Selecciona un paquete de diamantes";
+            }
+        } else if (selectedPayMethod === 'Binance Pay') {
+            title.innerText = "📌 Datos de Binance Pay";
+            details.innerHTML = `
+                <div class="payment-detail"><span>Binance Pay ID:</span> <strong>${myBinance.id}</strong></div>
+            `;
+            if (selectedPriceUSD > 0) {
+                total.innerText = `Monto a pagar: $${selectedPriceUSD.toFixed(2)} USDT`;
+            } else {
+                total.innerText = "Selecciona un paquete de diamantes";
+            }
+        }
+    }
+
+    function sendOrder() {
+        const playerId = document.getElementById('player-id').value;
+
+        if (!playerId) {
+            alert('Por favor, ingresa tu ID de Free Fire.');
+            return;
+        }
+        if (!selectedPkg) {
+            alert('Por favor, selecciona un paquete de diamantes.');
+            return;
+        }
+        if (!selectedPayMethod) {
+            alert('Por favor, selecciona tu método de pago.');
+            return;
+        }
+
+        if (!isStoreOpen) {
+            const confirmOrder = confirm("⏰ Actualmente estamos FUERA DE HORARIO de atención (Atendemos de 1:00 PM a 8:00 PM).\n\n¿Deseas enviar el pedido de todos modos para ser atendido en cuanto iniciemos jornada?");
+            if (!confirmOrder) return;
+        }
+
+        let priceText = `$${selectedPriceUSD.toFixed(2)} USD`;
+        let paymentDetails = "";
+
+        if (selectedPayMethod === 'Pago Móvil') {
+            const totalBS = (selectedPriceUSD * currentRateBS).toFixed(2);
+            priceText += ` (${totalBS} BS)`;
+            paymentDetails = `%0A📌 *DATOS DE PAGO MÓVIL:*%0A` +
+                             `• Banco: ${myPagoMovil.banco}%0A` +
+                             `• Cédula: V-${myPagoMovil.cedula}%0A` +
+                             `• Teléfono: ${myPagoMovil.telefono}%0A` +
+                             `• Monto Total: ${totalBS} BS`;
+        } else if (selectedPayMethod === 'Binance Pay') {
+            paymentDetails = `%0A📌 *DATOS DE BINANCE PAY:*%0A` +
+                             `• Binance Pay ID: ${myBinance.id}%0A` +
+                             `• Monto Total: $${selectedPriceUSD.toFixed(2)} USDT`;
+        }
+
+        const message = `Hola! Quiero realizar una recarga en THECHUY Recargas:%0A%0A` +
+                        `🎮 *ID Free Fire:* ${playerId}%0A` +
+                        `💎 *Paquete:* ${selectedPkg}%0A` +
+                        `💵 *Monto:* ${priceText}%0A` +
+                        `💳 *Método de Pago:* ${selectedPayMethod}%0A` +
+                        paymentDetails + `%0A%0A` +
+                        `Adjunto el comprobante de pago a continuación:`;
+
+        const myWhatsAppNumber = "584122871341";
+        
+        window.open(`https://wa.me/${myWhatsAppNumber}?text=${message}`, '_blank');
+    }
+</script>
+
+</body>
+</html>
